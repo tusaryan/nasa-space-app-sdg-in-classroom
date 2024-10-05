@@ -1,7 +1,7 @@
 /* src/styles/Header.css */
 
 header {
-    background-color: #004d40; /* Dark teal background */
+    background-color: #28937a; /* Dark teal background */
     color: white;
     padding: 20px;
     display: flex;
@@ -33,12 +33,12 @@ header {
   }
   
   nav a:hover {
-    background-color: #00796b; /* Lighter teal on hover */
+    background-color: #00000058; /* Lighter teal on hover */
     transform: scale(1.1);
   }
   
   nav a.active {
-    background-color: #009688; /* Highlight active link */
+    background-color: #000000; /* Highlight active link */
   }
   
   header::before {

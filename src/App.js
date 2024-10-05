@@ -1,5 +1,3 @@
-import './App.css';
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
@@ -7,6 +5,9 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import SDGsPage from './pages/SDGsPage';
 import LessonPlansPage from './pages/LessonPlansPage';
+import './App.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
