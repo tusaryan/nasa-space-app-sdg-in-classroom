@@ -8,7 +8,8 @@ const Header = () => {
 
     return (
         <header>
-            <h1>NASA Space App: SDGs in Classroom</h1>
+            <img src="https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/08/SDG-Wheel_WEB.png" alt="Logo" className="logo" width="50" height="50" />
+            <h1>NASA Space App: SDGs in Classroom </h1>
             <nav>
                 <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Home</Link>
                 <Link to="/sdgs" className={location.pathname === '/sdgs' ? 'active' : ''}>SDGs</Link>
