@@ -1,6 +1,221 @@
 /* src/styles/LessonPlansPage.css */
 
-.lesson-plans-page {
+/* v5 2:38 am */
+
+.lesson-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lesson-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+}
+
+.lesson-line {
+  width: 5px;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.lesson-content {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.theme-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+.add-lesson-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.add-lesson-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.lesson-card button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.lesson-card button:hover {
+  background-color: #ddd;
+}
+
+
+
+
+
+
+
+
+
+/* v4 1:57 am */
+
+/* src/pages/LessonPlansPage.css */
+/* .lesson-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lesson-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+}
+
+.lesson-line {
+  width: 5px;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.lesson-content {
+  margin-left: 15px;
+}
+
+.add-lesson-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.add-lesson-button:hover {
+  background-color: #0056b3;
+}
+
+.lesson-card button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.lesson-card button:hover {
+  background-color: #ddd;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* v3 */
+
+/* src/pages/LessonPlansPage.css */
+/* .lesson-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lesson-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+}
+
+.lesson-line {
+  width: 5px;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.lesson-content {
+  margin-left: 15px;
+}
+
+.add-lesson-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.add-lesson-button:hover {
+  background-color: #0056b3;
+} */
+
+
+
+
+
+
+
+/* v2 */
+
+/* .lesson-plans-page {
   text-align: center;
   padding: 50px;
   color: #004d40;
@@ -117,7 +332,7 @@
 
 .modal-content button:hover {
   background-color: #004d40;
-}
+} */
 
 
 
@@ -132,6 +347,7 @@
 
 
 
+/* v1 */
 
 
 /* src/styles/LessonPlansPage.css */

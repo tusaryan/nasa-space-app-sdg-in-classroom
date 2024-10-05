@@ -71,15 +71,46 @@ const HomePage = () => {
         <h3>Adoption of the SDGs (2015): </h3>
         <p>The 17 Sustainable Development Goals were adopted by all United Nations Member States in 2015 as part of the 2030 Agenda for Sustainable Developmen.</p>
     </div>
+    {/* <div class="card">
+        <h3>Rio+20 Conference (2012): </h3>
+        <p>The United Nations Conference on Sustainable Development, also known as Rio+20, laid the groundwork for the SDGs3
+        </p>
+    </div> */}
     <div class="card">
-        <h3>Card Title 4</h3>
-        <p></p>
-    </div>
-    <div class="card">
-        <h3>Card Title 5</h3>
-        <p>Description for card 5.</p>
+        <h3>Implementation (2016-Present):</h3>
+        <p>The SDGs came into effect on January 1, 2016, and countries have been working towards achieving these goals through national and international efforts</p>
     </div>
 </div>
+    <div className="home-container">
+        <div className="timeline-container">
+            <div className="timeline-event">
+                <div className="timeline-content">
+                    <h3>UN Ocean Conference 2025: </h3>
+                    <p>Scheduled for June 9-13, 2025, in Nice, France, this conference will focus on "Our Ocean, Our Future, Our Responsibility." It aims to address the critical role of oceans in sustainable development1
+.
+</p>
+                </div>
+                <div className="timeline-arrow"></div>
+            </div>
+            <div className="timeline-event">
+                <div className="timeline-content">
+                    <h3>10th Multi-Stakeholder Forum on Science, Technology, and Innovation for the SDGs: </h3>
+                    <p>This event will take place from May 7-8, 2025, and will bring together stakeholders to discuss how science, technology, and innovation can accelerate progress towards the SDGs2
+                    </p>
+                </div>
+                <div className="timeline-arrow"></div>
+            </div>
+            <div className="timeline-event">
+                <div className="timeline-content">
+                    <h3>Asia-Pacific GSDR Launch and Workshop: </h3>
+                    <p>From October 22-24, 2024, in New Delhi, India, this event will focus on the Global Sustainable Development Report (GSDR), which is produced every four years by an independent group of scientists appointed by the UN Secretary-General</p>
+                </div>
+            </div>
+        </div>
+        {/* <div className="image-container">
+            <img src="https://via.placeholder.com/300" alt="Placeholder" />
+        </div> */}
+    </div>
             </div>
         </div>
     );
