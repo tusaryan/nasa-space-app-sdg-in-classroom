@@ -2,14 +2,15 @@
 
 
 // import React, { useState } from "react";
-// import "../styles/SDGCard.css"; // Make sure to create and import the CSS file
+import "../styles/SDGCard.css"; // Make sure to create and import the CSS file
 // import Modal from 'react-modal';
 
-//v4 1:41 pm
+//v6 3:39pm
+
 import React, { useState } from "react";
 import Modal from 'react-modal';
 
-const SDGCard = ({ title, description, image, moreInfo }) => {
+const SDGCard = ({ title, image, moreInfo, shortDescription }) => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
     const openModal = () => setModalIsOpen(true);
@@ -21,11 +22,10 @@ const SDGCard = ({ title, description, image, moreInfo }) => {
                 <div className="sdg-card-front">
                     <img src={image} alt={title} className="sdg-image" />
                     <h3>{title}</h3>
-                    <p>{description}</p>
                 </div>
                 <div className="sdg-card-back">
                     <h3>{title}</h3>
-                    <p>Short description on the back side.</p>
+                    <p>{shortDescription}</p>
                 </div>
             </div>
             <Modal
@@ -43,6 +43,114 @@ const SDGCard = ({ title, description, image, moreInfo }) => {
 };
 
 export default SDGCard;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//v5 3:30 pm
+
+// import React, { useState } from "react";
+// import Modal from 'react-modal';
+//
+// const SDGCard = ({ title, description, image, moreInfo, shortDescription }) => {
+//     const [modalIsOpen, setModalIsOpen] = useState(false);
+//
+//     const openModal = () => setModalIsOpen(true);
+//     const closeModal = () => setModalIsOpen(false);
+//
+//     return (
+//         <div className="sdg-card" onClick={openModal}>
+//             <div className="sdg-card-inner">
+//                 <div className="sdg-card-front">
+//                     <img src={image} alt={title} className="sdg-image" />
+//                     <h3>{title}</h3>
+//                     <p>{description}</p>
+//                 </div>
+//                 <div className="sdg-card-back">
+//                     <h3>{title}</h3>
+//                     <p>{shortDescription}</p> {/* Updated line 28 */}
+//                 </div>
+//             </div>
+//             <Modal
+//                 isOpen={modalIsOpen}
+//                 onRequestClose={closeModal}
+//                 contentLabel="SDG Details"
+//                 ariaHideApp={false} // Add this line if you encounter issues with accessibility
+//             >
+//                 <h2>{title}</h2>
+//                 <div dangerouslySetInnerHTML={{ __html: moreInfo }} />
+//                 <button onClick={closeModal}>Close</button>
+//             </Modal>
+//         </div>
+//     );
+// };
+//
+// export default SDGCard;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//v4 1:41 pm
+// import React, { useState } from "react";
+// import Modal from 'react-modal';
+//
+// const SDGCard = ({ title, description, image, moreInfo }) => {
+//     const [modalIsOpen, setModalIsOpen] = useState(false);
+//
+//     const openModal = () => setModalIsOpen(true);
+//     const closeModal = () => setModalIsOpen(false);
+//
+//     return (
+//         <div className="sdg-card" onClick={openModal}>
+//             <div className="sdg-card-inner">
+//                 <div className="sdg-card-front">
+//                     <img src={image} alt={title} className="sdg-image" />
+//                     <h3>{title}</h3>
+//                     <p>{description}</p>
+//                 </div>
+//                 <div className="sdg-card-back">
+//                     <h3>{title}</h3>
+//                     <p>Short description on the back side.</p>
+//                 </div>
+//             </div>
+//             <Modal
+//                 isOpen={modalIsOpen}
+//                 onRequestClose={closeModal}
+//                 contentLabel="SDG Details"
+//                 ariaHideApp={false} // Add this line if you encounter issues with accessibility
+//             >
+//                 <h2>{title}</h2>
+//                 <div dangerouslySetInnerHTML={{ __html: moreInfo }} />
+//                 <button onClick={closeModal}>Close</button>
+//             </Modal>
+//         </div>
+//     );
+// };
+//
+// export default SDGCard;
 
 
 

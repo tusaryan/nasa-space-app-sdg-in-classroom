@@ -48,9 +48,9 @@ const questions = [
         answer: "By improving water quality, reducing pollution, and increasing water use efficiency"
     },
     {
-        question: "Which planet is known as the Red Planet?",
-        options: ["Earth", "Mars", "Jupiter", "Saturn"],
-        answer: "Mars"
+        question: "What approaches does SDG 15 (Life on Land) take to protect terrestrial ecosystems?",
+        options: ["By promoting deforestation", "By combating desertification, restoring degraded land, and conserving biodiversity", "By focusing only on agricultural land", "By ignoring forest conservation"],
+        answer: "By combating desertification, restoring degraded land, and conserving biodiversity"
     },
     // Add more questions here
 ];

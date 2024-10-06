@@ -6,8 +6,7 @@ const sdgs = [
 
     {
         title: "SDG 1: No Poverty",
-         image: "https://as2.ftcdn.net/v2/jpg/01/86/02/95/1000_F_186029577_LjdN0k9a05R6P0Ad1akuXIpiSvnwFUuQ.jpg",
-        description: "Eradicate poverty in all its formss and ensure that a",
+        image: "https://as2.ftcdn.net/v2/jpg/01/86/02/95/1000_F_186029577_LjdN0k9a05R6P0Ad1akuXIpiSvnwFUuQ.jpg",
         moreInfo: "<h4>Key Targets</h4>\n" +
             "<ul>\n" +
             "    <li>Eradicate extreme poverty (&lt;$1.90/day).</li>\n" +
@@ -16,11 +15,23 @@ const sdgs = [
             "    <li>Build resilience to shock.</li>\n" +
             "</ul>\n" +
             "<h4>Importance</h4>\n" +
-            "<p>Central to sustainable development. Poverty reduction improves global stability & equality.</p>\n" +
+            "<ul>\n" +
+            "<li>Central to sustainable development.</li>\n" +
+            "<li> Poverty reduction improves global stability & equality.</li>\n" +
+            "<ul>\n" +
             "<h4>Challenges</h4>\n" +
-            "<p>Growing economic inequality. Lack of social safety nets. Impact of climate change & conflict. Setbacks due to COVID-19.</p>\n" +
+            "<ul>\n" +
+            "<li>Growing economic inequality.</li>\n" +
+            "<li>Lack of social safety nets.</li>\n" +
+            "<li>Impact of climate change & conflict.</li>\n" +
+            "<li>Setbacks due to COVID-19.</li>\n" +
+            "</ul>\n" +
             "<h4>Future Outlook</h4>\n" +
-            "<p>Declining global poverty rates. Accelerated action needed, especially in sub-Saharan Africa & South Asia.</p>"
+            "<ul>\n" +
+            "<li>Declining global poverty rates.</li>\n" +
+            "<li>Accelerated action needed, especially in sub-Saharan Africa & South Asia.</li>\n" +
+            "</ul>\n",
+          shortDescription: "Eradicate poverty in all its forms and ensure that a"
     },
 
     {
@@ -45,7 +56,7 @@ const sdgs = [
     {
         title: "SDG 3: Good Health and Well-being" ,
         image: "https://www.sanitascare.health/images/hw.jpg",
-        description: "Ensure healthy lives and promote well-being for all at all ages through access to quality healthcare and healthy living conditions",
+        description:"Ensure healthy lives and promote well-being for all at all ages through access to quality healthcare and healthy living conditions",
         moreInfo: "" 
 
     },
@@ -58,7 +69,7 @@ const sdgs = [
     {
           title: "SDG 5: Gender Equality",
         image: "https://static.vecteezy.com/system/resources/previews/044/793/305/non_2x/gender-equality-men-and-women-have-equal-rights-feminism-vector.jpg" ,
-        description: "Achieve gender ",
+        description: "Achieve gender equality",
         moreInfo: "Further information about SDG 1."
     },
     {
@@ -150,6 +161,7 @@ const SDGsPage = () => {
                         description={sdg.description}
                         image={sdg.image}
                         moreInfo={sdg.moreInfo}
+                        shortDescription={sdg.shortDescription}
                     />
                 ))}
             </div>
