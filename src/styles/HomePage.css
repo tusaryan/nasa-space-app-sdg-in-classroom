@@ -1,5 +1,3 @@
-/* src/styles/HomePage.css */
-
 .home-page {
     position: relative;
     width: 100%;
@@ -10,11 +8,11 @@
 .timeline-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align all the timeline events */
+    align-items: center;
 }
 
 .timeline-event {
-    width: 80%; /* Adjust the width as needed */
+    width: 80%;
     margin-bottom: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
@@ -23,56 +21,22 @@
     padding: 20px;
 }
 
-
-/*//v1*/
-/*.background-video {*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    object-fit: cover;*/
-/*    z-index: -1;*/
-/*    opacity: 0.5; !* Adjust the opacity to make the video transparent *!*/
-/*}*/
-
-
-/*//v2*/
-/*.background-video {*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    width: 100%;*/
-/*    height: 60vh; !* 60% of the viewport height *!*/
-/*    max-height: 500px;*/
-/*    object-fit: cover;*/
-/*    z-index: -1; !* Ensure the video is behind other content *!*/
-/*}*/
-
-/*.content {*/
-/*    position: relative;*/
-/*    z-index: 1; !* Ensure the text is above the video *!*/
-/*    padding-top: 60vh; !* Push the text below the video *!*/
-/*    max-height: 500px;*/
-/*}*/
-
-/*//v3 4:47*/
 .background-video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* 60% of the viewport height */
+    height: 100%;
     max-height: 500px;
     object-fit: cover;
-    z-index: -1; /* Ensure the video is behind other content */
+    z-index: -1;
     opacity: 0.5;
 }
 
 .content {
     position: relative;
-    z-index: 1; /* Ensure the text is above the video */
-    padding-top: 60vh; /* Push the text below the video */
+    z-index: 1; 
+    padding-top: 60vh;
     max-height: 500px;
 }
 
@@ -119,7 +83,7 @@
 }
 
 .centered-video {
-    width: 80%; /* Adjust the width as needed */
+    width: 80%;
     margin: 20px auto;
     display: block;
 }
@@ -153,7 +117,7 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #007BFF; /* Adjust the background color as needed */
+    background-color: #007BFF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,7 +127,7 @@
 .achievement-number {
     font-size: 1.5em;
     font-weight: bold;
-    color: white; /* Adjust the text color as needed */
+    color: white;
 }
 
 .achievement-description {
@@ -182,7 +146,7 @@
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
-    width: calc(20% - 40px); /* Adjust width as needed */
+    width: calc(20% - 40px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
@@ -278,18 +242,6 @@
     transform: translateX(-50%);
 }
 
-/* .image-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-container img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-} */
 .page-layout {
     display: flex;
     justify-content: space-between;
@@ -372,13 +324,8 @@
     text-align: center;
 }
 
-/* .timeline-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
 .timeline-card {
-    width: 50vw; /* Cover 50% of the viewport width */
+    width: 50vw; 
     padding: 20px;
     margin-bottom: 20px;
     background-color: #f9f9f9;
@@ -388,7 +335,7 @@
 }
 
 .timeline-card {
-    width: 50%; /* Cover half the screen width */
+    width: 50%;
     padding: 20px;
     margin-bottom: 20px;
     background-color: #f9f9f9;
@@ -398,7 +345,7 @@
 }
 .achievements-heading {
     font-size: 2.5rem;
-    color: #ff6347; /* Tomato color */
+    color: #ff6347;
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -424,7 +371,7 @@
 }
 .cards-heading {
     font-size: 2.5rem;
-    color: #ff6347; /* Tomato color */
+    color: #ff6347; 
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -450,7 +397,7 @@
 }
 .timeline-heading {
     font-size: 2.5rem;
-    color: #ff6347; /* Tomato color */
+    color: #ff6347; 
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -476,7 +423,7 @@
 }
 
 .timeline-card {
-    width: 50vw; /* Cover 50% of the viewport width */
+    width: 50vw; 
     padding: 20px;
     margin-bottom: 20px;
     background-color: #f9f9f9;
@@ -487,12 +434,12 @@
 
 @media (max-width: 768px) {
     .timeline-card {
-        width: 100vw; /* Cover 100% of the viewport width on smaller screens */
+        width: 100vw; 
     }
 }
 .country-heading {
     font-size: 2.5rem;
-    color: #ff6347; /* Tomato color */
+    color: #ff6347;
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
