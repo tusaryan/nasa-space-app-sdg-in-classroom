@@ -14,6 +14,7 @@ const Header = () => {
                 <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Home</Link>
                 <Link to="/sdgs" className={location.pathname === '/sdgs' ? 'active' : ''}>SDGs</Link>
                 <Link to="/lesson-plans" className={location.pathname === '/lesson-plans' ? 'active' : ''}>Lesson Plans</Link>
+                <Link to="/trivia" className={location.pathname === '/trivia' ? 'active' : ''}>Trivia</Link>
             </nav>
         </header>
     );
