@@ -3,6 +3,8 @@ import axios from 'axios';
 import '../styles/AddLessonForm.css';
 
 //v4 2:34 am
+// const API_URL = 'https://nasa-space-app-438018.el.r.appspot.com/api/lesson-plan';
+const API_URL = 'http://localhost:8080/api/lesson-plan';
 
 const AddLessonForm = ({ onClose, lesson }) => {
   const [formData, setFormData] = useState({
@@ -30,8 +32,8 @@ const AddLessonForm = ({ onClose, lesson }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const request = lesson
-      ? axios.put(`http://localhost:8081/api/lesson-plan/${lesson.id}`, formData)
-      : axios.post('http://localhost:8081/api/lesson-plan', formData);
+      ? axios.put(`${API_URL}/${lesson.id}`, formData)
+      : axios.post(`${API_URL}`, formData);
 
     request
       .then(response => {

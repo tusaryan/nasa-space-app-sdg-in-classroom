@@ -4,13 +4,17 @@ import axios from 'axios';
 import AddLessonForm from './AddLessonForm';
 import '../styles/LessonPlansPage.css';
 
+// const API_URL = 'https://nasa-space-app-438018.el.r.appspot.com/api/lesson-plan';
+const API_URL = 'http://localhost:8080/api/lesson-plan';
+
 const LessonPlansPage = () => {
   const [lessons, setLessons] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [editLesson, setEditLesson] = useState(null);
 
   const fetchLessons = () => {
-    axios.get('http://localhost:8081/api/lesson-plan')
+    // axios.get('http://localhost:8081/api/lesson-plan')
+    axios.get(`${API_URL}`)
       .then(response => {
         setLessons(response.data);
       })
@@ -34,7 +38,8 @@ const LessonPlansPage = () => {
   };
 
   const handleDeleteLesson = (id) => {
-    axios.delete(`http://localhost:8081/api/lesson-plan/${id}`)
+    // axios.delete(`http://localhost:8081/api/lesson-plan/${id}`)
+    axios.delete(`${API_URL}/${id}`)
       .then(() => {
         fetchLessons();
       })

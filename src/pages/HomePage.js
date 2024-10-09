@@ -1,6 +1,6 @@
-// v2 4:35pm
 import React from 'react';
 import '../styles/HomePage.css';
+// import bgVideo from '../assets/videoplayback.mp4';
 import bgVideo from '../assets/videoplayback.mp4';
 
 const countries = [
@@ -22,18 +22,22 @@ const HomePage = () => {
     return (
         <div className="home-page">
 
-            <video className="background-video" autoPlay loop muted  position="relative" zIndex="100">
-                <source src="../assets/videoplayback.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
+            
             
             <div className="content">
+                <h1>Welcome to NASA Space App: SDGs in Classroom</h1>
+                <div className="video-container">
+                    <video className="background-video" autoPlay loop muted>
+                        <source src={bgVideo} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
                 {/* <h2>Welcome to NASA Space App: SDGs in Classroom</h2>
                 <p>
                     In 2015, the United Nations created the 2030 Sustainable Development Goals (SDG) Agenda to address global issues.
                     Learn how you can engage students in achieving these goals through exciting lesson plans!.
                 </p> */}
-                <h1>Welcome to NASA Space App: SDGs in Classroom</h1>
+                
                 <p>In 2015, the United Nations created the 2030 Sustainable Development Goals (SDG) Agenda to address global issues. Learn how you can engage students in achieving these goals through exciting lesson plans!
                     Education is a powerful tool for shaping a better world, and by integrating the Sustainable Development Goals (SDGs) into the classroom, teachers can foster global awareness and critical thinking among students. 
                     Through engaging, science-based lesson plans, students will not only learn about space and science but also about the interconnectedness of the planet, and how they can take action to create a more sustainable 
