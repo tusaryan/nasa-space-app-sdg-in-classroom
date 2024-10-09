@@ -1,15 +1,27 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
+/.idea
+.idea
 /node_modules
 /.pnp
 .pnp.js
+**/node_modules
+**/.pnp
+**/.pnp.js
 
 # testing
 /coverage
+**/coverage
 
 # production
 /build
+**/build
+
+# IDE files
+**/.idea
+
+
 
 # misc
 .DS_Store
@@ -21,4 +33,12 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/.env
 .env
+
+.DS_Store
+**/.env* # Matches all files starting with .env in any subdirectory
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
