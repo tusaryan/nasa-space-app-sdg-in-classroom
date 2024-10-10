@@ -58,7 +58,8 @@ const sdgs = [
         title: "SDG 3: Good Health and Well-being" ,
         image: "https://www.sanitascare.health/images/hw.jpg",
         description:"Ensure healthy lives and promote well-being for all at all ages through access to quality healthcare and healthy living conditions",
-        moreInfo: "<h3>Key Targets</h3>\n" + "<ul type = “disc”>\n" +
+        moreInfo: "<h3>Key Targets</h3>\n" 
+            + "<ul type = “disc”>\n" +
             "<li>Reduce maternal mortality to <70 per 100,000 live births by 2030. </li> \n" +
             "<li>End epidemics of AIDS, tuberculosis, malaria, & neglected tropical diseases. </li> \n" +
             "<li>End preventable deaths of newborns & children under 5. </li> \n" +

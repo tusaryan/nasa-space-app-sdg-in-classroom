@@ -11,11 +11,11 @@ const countries = [
     { name: 'France', flag: 'https://cdn.britannica.com/82/682-004-F0B47FCB/Flag-France.jpg' },
 ];
 const developers = [
-    { name: 'Abhishek Rai', role: 'Content & FrontEnd Developer' },
-    { name: 'Ritika Bansal', role: 'Content & FrontEnd Developer' },
-    { name: 'Mehak Bishnoi', role: 'Content & FrontEnd Developer' },
+    { name: 'Abhishek Rai', role: 'Content & Frontend Developer' },
+    { name: 'Ritika Bansal', role: 'Content & Frontend Developer' },
+    { name: 'Mehak Bishnoi', role: 'Content & Frontend Developer' },
     { name: 'Aryan Kumar', role: 'Full-Stack Developer' },
-    { name: 'Taranpreet Singh Khurana', role: 'FrontEnd Developer' },
+    { name: 'Taranpreet Singh Khurana', role: 'Frontend Developer' },
 ];
 
 const HomePage = () => {

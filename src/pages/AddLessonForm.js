@@ -3,8 +3,8 @@ import axios from 'axios';
 import '../styles/AddLessonForm.css';
 
 //v4 2:34 am
-// const API_URL = 'https://nasa-space-app-438018.el.r.appspot.com/api/lesson-plan';
-const API_URL = 'http://localhost:8080/api/lesson-plan';
+const API_URL = 'https://nasa-space-app-438018.el.r.appspot.com/api/lesson-plan';
+// const API_URL = process.env.REACT_APP_API_URL_DEVELOPMENT || process.env.REACT_APP_API_URL_PRODUCTION || 'http://localhost:8080/api/lesson-plan'; // Fallback to localhost if not set
 
 const AddLessonForm = ({ onClose, lesson }) => {
   const [formData, setFormData] = useState({

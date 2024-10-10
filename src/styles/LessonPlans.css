@@ -1,4 +1,332 @@
-.lesson-plans-page {
+/* new v2 */
+.lesson-plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  padding: 20px;
+}
+
+.lecture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  grid-gap: 20px;
+  width: 90%; /* Limit grid width */
+  margin-top:20px;
+}
+
+.lecture-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Hide overflowing content from popup */
+  background-color: white;
+  position: relative; /* For absolute positioning of popup */
+  transition: box-shadow 0.1s ease; /*Smooth transition for hover effect*/
+}
+
+.lecture-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lecture-image-container {
+  height: 150px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.lecture-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* Prevents cropping */
+}
+
+.lecture-info {
+  padding: 15px;
+}
+
+.lecture-info h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.lecture-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.lecture-details span {
+    display:flex;
+    align-items: center;
+}
+
+.lecture-details i { /* Clock icon */
+  margin-right: 5px;
+}
+
+.lecture-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 100%;
+  z-index: 10; /* Ensure popup is on top */
+  opacity: 0;
+  pointer-events: none; /* Prevent clicks on hidden popup */
+  transform: scale(0.9);
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.lecture-card:hover .lecture-popup {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.lecturer-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.lecturer-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.lecture-popup button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* Loading Spinner Styles */
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px; /* Adjust height as needed */
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #00796b;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //new v1 12:23 */
+/* ...Existing styles... */
+/* 
+.lecture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+  grid-gap: 20px;
+}
+
+.lecture-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; 
+  position: relative; 
+}
+
+.lecture-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.lecture-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lecture-info {
+  padding: 15px;
+}
+
+.lecture-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+.duration, .date-time {
+  display: flex;
+  align-items: center;
+}
+
+.duration i {
+  margin-right: 5px;
+}
+
+
+.lecture-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 300px;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+
+}
+
+.lecture-card:hover .lecture-popup {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lecturer-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.lecturer-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.join-button {
+  display: block;
+  background-color: #00796b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #00695c;
+}
+
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #00796b;
+  border-color: #00796b transparent #00796b transparent;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+ */
+
+
+
+
+
+
+
+/* //original */
+/* .lesson-plans-page {
   text-align: center;
   padding: 50px;
   color: #004d40;
@@ -115,4 +443,4 @@
 
 .modal-content button:hover {
   background-color: #004d40;
-}
+} */
