@@ -23,7 +23,7 @@ const LessonCard = ({ lecture }) => {
         <div className="lecture-popup">
           <h3>{lecture.title}</h3>
           <div className="lecturer-info">
-            <img src="placeholder-profile.png" alt={lecture.lectureBy} className="lecturer-image" /> {/* Replace with actual profile image */}
+            <img src="https://cdn-icons-png.flaticon.com/512/3829/3829792.png" alt={lecture.lectureBy} className="lecturer-image" />
             <span>{lecture.lectureBy}</span>
           </div>
           <p>{lecture.description}</p>

@@ -25,7 +25,7 @@ const LessonPlans = () => {
 
   return (
     <div className="lesson-plans">
-      <h2>Lesson Plans</h2>
+      <h2>Lecture Planner</h2>
       {isLoading ? (
         <LoadingSpinner /> //Display Loading animation
       ) : (

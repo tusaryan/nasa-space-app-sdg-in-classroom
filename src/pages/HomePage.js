@@ -1,8 +1,11 @@
 import React from 'react';
 import '../styles/HomePage.css';
 // import bgVideo from '../assets/videoplayback.mp4';
-import bgVideo from '../assets/videoplayback.mp4';
 
+const youtubeVideoId = 'M-iJM02m_Hg'; // Extract the video ID from the YouTube URL
+const youtubeUrl = `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&mute=1&loop=1`; 
+
+// const bgVideo = 'https://www.youtube.com/watch?v=M-iJM02m_Hg&t=26s&pp=ygUGc2RnIHVu';
 const countries = [
     { name: 'United States', flag: 'https://cdn.britannica.com/79/4479-050-6EF87027/flag-Stars-and-Stripes-May-1-1795.jpg' },
     { name: 'Canada', flag: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1200px-Flag_of_Canada_%28Pantone%29.svg.png'},
@@ -27,10 +30,18 @@ const HomePage = () => {
             <div className="content">
                 <h1>Welcome to NASA Space App: SDGs in Classroom</h1>
                 <div className="video-container">
-                    <video className="background-video" autoPlay loop muted>
-                        <source src={bgVideo} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                    <iframe 
+                        className="background-video"
+                        // width="100%" 
+                        height="300px" 
+                        src={youtubeUrl} 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        // allow="autoplay; encrypted-playback; picture-in-picture" 
+                        allow="autoplay; encrypted-media" 
+                        allowfullscreen
+                    >
+                    </iframe>
                 </div>
                 {/* <h2>Welcome to NASA Space App: SDGs in Classroom</h2>
                 <p>

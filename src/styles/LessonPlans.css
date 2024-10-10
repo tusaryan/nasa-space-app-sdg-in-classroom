@@ -25,6 +25,7 @@
 
 .lecture-card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* transform-style: preserve-3d; */
 }
 
 .lecture-image-container {
@@ -76,6 +77,7 @@
   z-index: 10; /* Ensure popup is on top */
   opacity: 0;
   pointer-events: none; /* Prevent clicks on hidden popup */
+  /* transform: rotateY(180deg); */
   transform: scale(0.9);
   transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
@@ -84,6 +86,7 @@
   opacity: 1;
   pointer-events: auto;
   transform: translate(-50%, -50%) scale(1);
+  margin-left: 10px;
 }
 
 .lecturer-info {

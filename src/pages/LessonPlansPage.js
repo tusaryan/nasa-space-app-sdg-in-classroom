@@ -6,7 +6,7 @@ import LessonPlans from '../components/LessonPlans';
 const LessonPlansPage = () => {
   return (
     <div>
-      <h1>Lesson Plans</h1>
+      {/* <h1>Lesson Plans</h1> */}
       <LessonPlans />
     </div>
   );
